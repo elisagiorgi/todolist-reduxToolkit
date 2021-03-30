@@ -1,0 +1,32 @@
+.todoContainer {
+  display: flex;
+  margin: 5px 30px;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  background: #e6fffb;
+  border: 1px;
+  width: 70%;
+}
+
+.textTodo {
+  font-size: 20px;
+  margin-bottom: 0;
+  font-family: Marker Felt, fantasy;
+}
+
+.completedTodo {
+  text-decoration: line-through;
+}
+
+.icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-beetween;
+  margin-left: 5px;
+}

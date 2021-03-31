@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/todolist/static/css/main.0a4bbc33.chunk.css",
-    "main.js": "/todolist/static/js/main.72884d57.chunk.js",
-    "main.js.map": "/todolist/static/js/main.72884d57.chunk.js.map",
-    "runtime-main.js": "/todolist/static/js/runtime-main.e7725399.js",
-    "runtime-main.js.map": "/todolist/static/js/runtime-main.e7725399.js.map",
-    "static/css/2.45ad7e77.chunk.css": "/todolist/static/css/2.45ad7e77.chunk.css",
-    "static/js/2.0bfad071.chunk.js": "/todolist/static/js/2.0bfad071.chunk.js",
-    "static/js/2.0bfad071.chunk.js.map": "/todolist/static/js/2.0bfad071.chunk.js.map",
-    "index.html": "/todolist/index.html",
-    "precache-manifest.1f606533e252661a1f4d80510452ec17.js": "/todolist/precache-manifest.1f606533e252661a1f4d80510452ec17.js",
-    "service-worker.js": "/todolist/service-worker.js",
-    "static/css/2.45ad7e77.chunk.css.map": "/todolist/static/css/2.45ad7e77.chunk.css.map",
-    "static/css/main.0a4bbc33.chunk.css.map": "/todolist/static/css/main.0a4bbc33.chunk.css.map",
-    "static/js/2.0bfad071.chunk.js.LICENSE.txt": "/todolist/static/js/2.0bfad071.chunk.js.LICENSE.txt"
+    "main.css": "/todolist-reduxToolkit/static/css/main.0a4bbc33.chunk.css",
+    "main.js": "/todolist-reduxToolkit/static/js/main.cdc9c02d.chunk.js",
+    "main.js.map": "/todolist-reduxToolkit/static/js/main.cdc9c02d.chunk.js.map",
+    "runtime-main.js": "/todolist-reduxToolkit/static/js/runtime-main.77ee7091.js",
+    "runtime-main.js.map": "/todolist-reduxToolkit/static/js/runtime-main.77ee7091.js.map",
+    "static/css/2.45ad7e77.chunk.css": "/todolist-reduxToolkit/static/css/2.45ad7e77.chunk.css",
+    "static/js/2.e3573451.chunk.js": "/todolist-reduxToolkit/static/js/2.e3573451.chunk.js",
+    "static/js/2.e3573451.chunk.js.map": "/todolist-reduxToolkit/static/js/2.e3573451.chunk.js.map",
+    "index.html": "/todolist-reduxToolkit/index.html",
+    "precache-manifest.413ff99c568b0a88ff6f3e2a26235751.js": "/todolist-reduxToolkit/precache-manifest.413ff99c568b0a88ff6f3e2a26235751.js",
+    "service-worker.js": "/todolist-reduxToolkit/service-worker.js",
+    "static/css/2.45ad7e77.chunk.css.map": "/todolist-reduxToolkit/static/css/2.45ad7e77.chunk.css.map",
+    "static/css/main.0a4bbc33.chunk.css.map": "/todolist-reduxToolkit/static/css/main.0a4bbc33.chunk.css.map",
+    "static/js/2.e3573451.chunk.js.LICENSE.txt": "/todolist-reduxToolkit/static/js/2.e3573451.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e7725399.js",
+    "static/js/runtime-main.77ee7091.js",
     "static/css/2.45ad7e77.chunk.css",
-    "static/js/2.0bfad071.chunk.js",
+    "static/js/2.e3573451.chunk.js",
     "static/css/main.0a4bbc33.chunk.css",
-    "static/js/main.72884d57.chunk.js"
+    "static/js/main.cdc9c02d.chunk.js"
   ]
 }

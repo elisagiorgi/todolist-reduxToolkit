@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuid } from "uuid";
 import DataEntry from "./DataEntry";
 import "antd/dist/antd.css";
+import { useSelector } from "react-redux";
+import { selectCount } from "./features/counter/counterSlice";
 
 import Todo from "./Todo";
 import "./styles.css";
@@ -17,7 +16,8 @@ const ToDoApp = () => {
     { id: uuid(), value: "Read a book" },
   ]);
 
-  const [hiddenAdd, setHiddenAdd] = useState(false);
+  const count = useSelector(selectCount);
+
   const [inputValue, setInputValue] = useState("");
 
   const inputChange = (e) => {
@@ -67,26 +67,17 @@ const ToDoApp = () => {
     <>
       <div className="container">
         <p className="title">To do List</p>
+        <p className="title sub"> Completed: {count}</p>
 
         <div className="content">
-          <div
-            className={!hiddenAdd ? "addButton" : "addButton red"}
-            onClick={() => setHiddenAdd(!hiddenAdd)}
-          >
-            <FontAwesomeIcon
-              icon={!hiddenAdd ? faPlus : faTimes}
-              style={{ fontSize: "20px", color: "white", margin: "0 auto" }}
-            />
-          </div>
-          {hiddenAdd && (
-            <DataEntry
-              inputValue={inputValue}
-              onChangeInput={handleChange}
-              onPressEnterInput={inputChange}
-              onClickButton={buttonChange}
-              buttonText="Add"
-            />
-          )}
+          <DataEntry
+            inputValue={inputValue}
+            onChangeInput={handleChange}
+            onPressEnterInput={inputChange}
+            onClickButton={buttonChange}
+            buttonText="Add"
+          />
+
           {allTodo}
         </div>
       </div>

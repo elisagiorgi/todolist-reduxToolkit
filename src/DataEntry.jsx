@@ -11,7 +11,7 @@ const DataEntry = (props) => {
     onChangeInput,
     onPressEnterInput,
     onClickButton,
-    buttonText
+    buttonText,
   } = props;
 
   return (
@@ -27,13 +27,13 @@ const DataEntry = (props) => {
         style={{
           height: "40px",
           marginLeft: "15px",
-          backgroundColor: "#a0d911",
+          backgroundColor: "#ffff",
           color: "black",
-          border: "1px #a0d911"
+          border: "2px solid #f2a899",
         }}
         onClick={() => onClickButton()}
       >
-        <p style={{ fontSize: "20px" }}>{buttonText}</p>
+        <p style={{ fontSize: "20px", color: "#f2a899" }}>{buttonText}</p>
       </Button>
     </div>
   );

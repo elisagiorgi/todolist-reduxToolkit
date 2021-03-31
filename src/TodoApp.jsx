@@ -4,26 +4,28 @@ import DataEntry from "./DataEntry";
 import "antd/dist/antd.css";
 import { useSelector } from "react-redux";
 import { selectCount } from "./features/counter/counterSlice";
+import {
+  selectTodo,
+  addToDo,
+  editToDo,
+  removeToDo,
+} from "./features/todos/todoSlice";
+import { useDispatch } from "react-redux";
 
 import Todo from "./Todo";
 import "./styles.css";
 
 const ToDoApp = () => {
-  const [todoList, setTodoList] = useState([
-    { id: uuid(), value: "Keep learning" },
-    { id: uuid(), value: "Have a coffee" },
-    { id: uuid(), value: "Climb a mountain", done: true },
-    { id: uuid(), value: "Read a book" },
-  ]);
-
   const count = useSelector(selectCount);
+  const todoList = useSelector(selectTodo);
 
   const [inputValue, setInputValue] = useState("");
+  const dispatch = useDispatch();
 
   const inputChange = (e) => {
     if (e) {
       const el = { id: uuid(), value: e };
-      setTodoList([...todoList, el]);
+      dispatch(addToDo(el));
       setInputValue("");
     }
   };
@@ -31,7 +33,7 @@ const ToDoApp = () => {
   const buttonChange = () => {
     if (inputValue) {
       const el = { id: uuid(), value: inputValue };
-      setTodoList([...todoList, el]);
+      dispatch(addToDo(el));
       setInputValue("");
     }
   };
@@ -40,16 +42,7 @@ const ToDoApp = () => {
   };
 
   const updateTodo = (id, value) => {
-    const editedList = todoList.map((el) => {
-      el = el.id === id ? { ...el, value: value } : { ...el };
-      return el;
-    });
-    setTodoList(editedList);
-  };
-
-  const removeToDo = (id) => {
-    const editedList = todoList.filter((el) => el.id !== id);
-    setTodoList(editedList);
+    dispatch(editToDo({ id: id, value: value }));
   };
 
   const allTodo = todoList.map((el) => {
@@ -58,7 +51,7 @@ const ToDoApp = () => {
         key={"todo_" + el.id}
         element={el}
         updateTodo={updateTodo}
-        removeToDo={removeToDo}
+        removeToDo={(id) => dispatch(removeToDo(id))}
       />
     );
   });

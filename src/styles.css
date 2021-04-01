@@ -7,8 +7,9 @@
         background-color: rgb(255, 227, 227) !important;
       }
       
+      
       .container {
-        margin: 80px auto;
+        margin: 8vh auto;
         max-width: 60vw;
       }
       
@@ -35,12 +36,13 @@
       
       .inputStyle {
         margin: 20px 0;
-        width: 70%;
+        width: 60vw;
         font-family: "Caladea", serif;
         display: flex;
         flex-direction: row;
       }
-      
+
+
       .content {
         display: flex;
         flex-direction: column;
@@ -68,5 +70,16 @@
         opacity: 1;
         }
 
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            margin: 2vh auto;
+            max-width: 70vw;
+        }
+        .inputStyle{
+            width: 80vw;
+        }
+        }
+          
        
       

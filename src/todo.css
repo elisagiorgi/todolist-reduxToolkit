@@ -6,8 +6,14 @@
   align-items: center;
   background:lavenderblush;
   border: 1px;
-  width: 70%;
+  width: 60vw
 }
+@media only screen and (max-width: 600px) {
+    .todoContainer {
+        width: 90vw;
+    }
+  }
+
 
 .textTodo {
   font-size: 20px;
@@ -30,3 +36,4 @@
   justify-content: space-beetween;
   margin-left: 5px;
 }
+

@@ -7,9 +7,9 @@
   "private": true,
   "main": "src/index.js",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "1.2.34",
-    "@fortawesome/free-solid-svg-icons": "5.15.2",
-    "@fortawesome/react-fontawesome": "0.1.14",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@reduxjs/toolkit": "^1.5.1",
     "antd": "4.10.3",
     "react": "17.0.0",
